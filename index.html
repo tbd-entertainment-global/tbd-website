@@ -1,50 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>TBD ENTERTAINMENT GLOBAL</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    background:#d65a00;
-    color:white;
-    font-family:Arial, sans-serif;
-    text-align:center;
+background:#0b0b0b;
+color:#ffffff;
 }
 
 header{
-    padding:60px 20px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:999;
 }
 
-h1{
-    font-size:42px;
-    margin-bottom:10px;
+.logo{
+font-size:26px;
+font-weight:700;
+color:#ff7b00;
 }
 
-p{
-    font-size:20px;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+font-weight:500;
 }
 
-.button{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:white;
-    color:#d65a00;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
-    font-size:18px;
+nav a:hover{
+color:#ff7b00;
 }
 
-footer{
-    margin-top:80px;
-    padding:20px;
-    font-size:14px;
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
 }
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+color:#dddddd;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:#ff7b00;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+background:#ff9500;
+
+transform:translateY(-3px);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+font-size:38px;
+
+margin-bottom:25px;
+
+color:#ff7b00;
+
+text-align:center;
+
+}
+
+.text{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#d9d9d9;
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.card{
+
+background:#171717;
+
+padding:30px;
+
+border-radius:18px;
+
+transition:.3s;
+
+border:1px solid #252525;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#ff7b00;
+
+}
+
+.card h3{
+
+margin-bottom:12px;
+
+color:#ff7b00;
+
+}
+
+.card p{
+
+color:#d0d0d0;
+
+line-height:1.7;
+
+}
+
 </style>
 
 </head>
@@ -53,24 +217,270 @@ footer{
 
 <header>
 
-<h1>Welcome to<br>TBD ENTERTAINMENT GLOBAL</h1>
+<div class="logo">
+TBD ENTERTAINMENT GLOBAL
+</div>
 
-<p>
-Official Entertainment Company
-</p>
+<nav>
 
-<a href="#" class="button">
-Explore
-</a>
+<a href="#home">HOME</a>
+
+<a href="#about">ABOUT</a>
+
+<a href="#projects">PROJECTS</a>
+
+<a href="#team">TEAM</a>
+
+<a href="#contact">CONTACT</a>
+
+</nav>
 
 </header>
 
-<footer>
+<section class="hero" id="home">
+
+<div>
+
+<h1>
+
+WELCOME TO<br>
+
+TBD ENTERTAINMENT GLOBAL
+
+</h1>
+
+<p>
+
+Official Entertainment Website
+
+Creating High Quality Fanmade Entertainment
+
+</p>
+
+<a href="#about" class="btn">
+
+EXPLORE
+
+</a>
+
+</div>
+
+</section><section id="about">
+
+<h2 class="title">ABOUT US</h2>
+
+<p class="text">
+
+Welcome to <b>TBD ENTERTAINMENT GLOBAL</b>.
+
+We are an independent fanmade entertainment brand dedicated to creating high-quality visual content, music concepts, album projects, promotional artwork and digital experiences inspired by the global K-pop industry.
+
+Our goal is to deliver creative, professional and original fanmade entertainment while respecting the original artists and their work.
+
+</p>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">FEATURED PROJECTS</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>CHAOS</h3>
+
+<p>BLACKPINK Fanmade Mini Album Project with premium visuals and official-style branding.</p>
+
+</div>
+
+<div class="card">
+
+<h3>OUTLAW</h3>
+
+<p>Creative fanmade music project focused on cinematic storytelling and powerful concepts.</p>
+
+</div>
+
+<div class="card">
+
+<h3>LOST WORLD</h3>
+
+<p>A unique visual album experience designed with modern entertainment aesthetics.</p>
+
+</div>
+
+<div class="card">
+
+<h3>ZEVIO</h3>
+
+<p>Official creator platform publishing fanmade music videos, edits and premium Shorts.</p>
+
+</div>
+
+<div class="card">
+
+<h3>QYRA LABEL</h3>
+
+<p>A creative digital label dedicated to visual production, concept design and future entertainment projects.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="team">
+
+<h2 class="title">OUR TEAM</h2>
+
+<p class="text">
+
+<b>The Blink Dynasty</b> serves as the official creative editing team behind TBD ENTERTAINMENT GLOBAL.
+
+From concept planning to artwork, thumbnails, promotional materials and fanmade music videos, every project is carefully crafted with attention to quality and originality.
+
+</p>
+
+</section>
+
+<section>
+
+<h2 class="title">OUR SERVICES</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Fanmade Music Videos</h3>
+
+<p>Professional fanmade music videos with premium editing and cinematic quality.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Album Concepts</h3>
+
+<p>Creative album branding, teaser posters, visual concepts and promotional designs.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Graphic Design</h3>
+
+<p>Official-style thumbnails, banners, social media graphics and promotional artwork.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Digital Branding</h3>
+
+<p>Creative branding solutions for entertainment projects and online platforms.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">LATEST NEWS</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>TBD ENTERTAINMENT GLOBAL Website</h3>
+
+<p>The official website is now under active development and will continue receiving new features and updates.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Future Projects</h3>
+
+<p>More fanmade albums, music videos and entertainment content will be announced soon.</p>
+
+</div>
+
+</div>
+
+    </section><section id="contact">
+
+<h2 class="title">CONTACT US</h2>
+
+<p class="text">
+
+Thank you for visiting the official website of
+<b>TBD ENTERTAINMENT GLOBAL</b>.
+
+For future updates, collaborations and official announcements,
+please follow our official social media platforms.
+
+</p>
+
+</section>
+
+<footer style="background:#050505;padding:60px 8%;text-align:center;">
+
+<h2 style="color:#ff7b00;margin-bottom:15px;">
+
+TBD ENTERTAINMENT GLOBAL
+
+</h2>
+
+<p style="color:#cfcfcf;line-height:1.9;">
+
+Creating Professional Fanmade Entertainment.<br>
+
+Inspired by creativity, powered by passion.
+
+</p>
+
+<br>
+
+<div style="display:flex;justify-content:center;flex-wrap:wrap;gap:15px;">
+
+<a href="#" class="btn">YouTube</a>
+
+<a href="#" class="btn">Instagram</a>
+
+<a href="#" class="btn">TikTok</a>
+
+<a href="#" class="btn">Threads</a>
+
+<a href="#" class="btn">Facebook</a>
+
+</div>
+
+<br><br>
+
+<hr style="border:1px solid #222;">
+
+<br>
+
+<p style="color:#888;line-height:1.8;">
 
 © 2026 TBD ENTERTAINMENT GLOBAL<br>
+
 All Rights Reserved.
+
+<br><br>
+
+This website is an independent fanmade entertainment project.
+
+All trademarks, logos and original artist rights belong to their respective owners.
+
+</p>
 
 </footer>
 
 </body>
+
 </html>
